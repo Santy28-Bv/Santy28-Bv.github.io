@@ -1,0 +1,74 @@
+  :root {
+    /* Paleta Verde */
+    --text: #6b7280;
+    --text-h: #111827;
+    --bg: #f9fafb;
+    --border: #e5e7eb;
+    --code-bg: #f3f4f6;
+    --accent: #10b981; /* Verde esmeralda principal */
+    --accent-bg: rgba(16, 185, 129, 0.1);
+    --accent-border: rgba(16, 185, 129, 0.5);
+    --social-bg: rgba(243, 244, 246, 0.5);
+    
+    --shadow: rgba(0, 0, 0, 0.05) 0 10px 15px -3px, rgba(0, 0, 0, 0.03) 0 4px 6px -2px;
+
+    --sans: 'Inter', system-ui, sans-serif;
+    --heading: 'Inter', system-ui, sans-serif;
+    --mono: ui-monospace, Consolas, monospace;
+
+    font: 18px/145% var(--sans);
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #9ca3af;
+      --text-h: #f6ff00;
+      --bg: rgb(0, 0, 0); /* Fondo verde muy oscuro */
+      --border: #fff200;
+      --code-bg: #941a1a51;
+      --accent: #d82c2c; /* Verde más claro para brillo */
+      --accent-bg: rgb(235, 17, 17);
+      --accent-border: rgba(211, 70, 52, 0.5);
+    }
+  }
+
+  /* Mantén el resto de tus selectores (body, h1, h2, #app, etc.) 
+    tal cual estaban en tu archivo original. */
+
+  body { margin: 0; }
+
+  h1, h2 { font-family: var(--heading); font-weight: 600; color: var(--text-h); }
+
+  h1 { font-size: 56px; margin: 32px 0; }
+
+  .counter {
+    color: var(--accent);
+    background: var(--accent-bg);
+    border: 2px solid transparent;
+  }
+
+  .counter:hover { border-color: var(--accent-border); }
+
+  /* Ajuste específico para enlaces y botones verdes */
+  #next-steps ul a:hover {
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+
+  /* Centrar todas las imágenes que sean directas dentro de un contenedor */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Asegurar que el texto dentro de .hero-text también esté centrado */
+  .hero-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
