@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  // Esta línea le indica a Vite que los archivos de tu web
-  // deben buscarse de forma relativa, no absoluta.
-  base: './', 
+  // Cambia esto por el nombre de tu repo exactamente
+  base: '/github-page/', 
 })
